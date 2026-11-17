@@ -1,0 +1,269 @@
+
+/* Mengatur seluruh halaman */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('c:\\Users\\user\\OneDrive\\Gambar\\pokemon-pikachu-electric-jump-desktop-wallpaper-preview.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+.profile-card {
+    background-color: rgb(255, 252, 229);
+    width: 100%;
+    max-width: 380px;
+    padding: 30px;
+    margin: 20px auto;
+
+    border: 1px solid #ff0000;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+}
+
+
+.profile-image {
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid #ffd000;
+    object-fit: cover;
+}
+
+/* Nama dan profesi */
+.profile-card h1 {
+    font-size: 26px;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.profile-card h2 {
+    font-size: 16px;
+    color: #ffd500;
+    margin-bottom: 18px;
+}
+
+/* Deskripsi profil */
+.description {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+
+.social-button {
+    text-decoration: none;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+
+.instagram {
+    background-color: #e1306c;
+}
+
+    
+.tiktok {
+    background-color: #000000;
+}
+
+
+.github {
+    background-color: #3f3e3e;
+}
+
+/* Efek hover: warna berubah dan tombol terangkat */
+.social-button:hover {
+    filter: brightness(0.85);
+    transform: translateY(-4px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.contact-button {
+    display: block;
+    background-color: #c5da23;
+    color: white;
+    text-decoration: none;
+
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #ff0000;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(37, 99, 235, 0.3);
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .profile-card {
+        max-width: 100%;
+        padding: 22px;
+        margin: 10px auto;
+    }
+
+    .profile-card h1 {
+        font-size: 23px;
+    }
+
+    .profile-image img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .social-links {
+        gap: 8px;
+    }
+
+    .social-button {
+        padding: 9px 10px;
+        font-size: 12px;
+    }
+}
+
+.theme-toggle {
+    position: fixed;
+
+    top: 20px;
+    right: 20px;
+
+    padding: 12px 18px;
+
+    border: none;
+    border-radius: 25px;
+
+    background-color: #222;
+    color: white;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    z-index: 1000;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.05);
+}
+
+/* MODE GELAP */
+body.dark-mode {
+    background: #121212 !important;
+    color: white;
+}
+
+body.dark-mode .profile-card {
+    background-color: #242424;
+
+    border: 1px solid #ffd000;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .profile-card h1 {
+    color: white;
+}
+
+body.dark-mode .profile-card h2 {
+    color: #ffd500;
+}
+
+body.dark-mode .description {
+    color: #cccccc;
+}
+
+body.dark-mode .contact-button {
+    background-color: #25D366;
+    color: white;
+}
+
+/* MODE TERANG */
+body.light-mode {
+    background: url('c:\\Users\\user\\OneDrive\\Gambar\\pokemon-pikachu-electric-jump-desktop-wallpaper-preview.jpg')
+    no-repeat center center;
+
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* RESPONSIVE UNTUK HP */
+@media screen and (max-width: 600px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .profile-card {
+        max-width: 100%;
+        padding: 22px;
+        margin: 10px auto;
+    }
+
+    .profile-card h1 {
+        font-size: 23px;
+    }
+
+    .profile-image img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .social-links {
+        gap: 8px;
+    }
+
+    .social-button {
+        padding: 9px 10px;
+        font-size: 12px;
+    }
+
+    .theme-toggle {
+        top: 12px;
+        right: 12px;
+
+        padding: 9px 13px;
+        font-size: 12px;
+    }
+}

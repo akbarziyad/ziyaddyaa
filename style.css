@@ -8,7 +8,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: url('c:\\Users\\user\\OneDrive\\Gambar\\pokemon-pikachu-electric-jump-desktop-wallpaper-preview.jpg') no-repeat center center;
+     background: url('images/pikachu.jpg') no-repeat center center;
     background-size: cover;
     min-height: 100vh;
 
@@ -221,7 +221,7 @@ body.dark-mode .contact-button {
 
 /* MODE TERANG */
 body.light-mode {
-    background: url('c:\\Users\\user\\OneDrive\\Gambar\\pokemon-pikachu-electric-jump-desktop-wallpaper-preview.jpg')
+      background: url('images/pikachu.jpg') no-repeat center center;
     no-repeat center center;
 
     background-size: cover;
